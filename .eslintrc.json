@@ -1,0 +1,68 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  
+  "parser": "babel-eslint",
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-redux/recommended",
+    "plugin:prettier/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "prettier/flowtype",
+    "prettier/standard",
+    "prettier/react"
+  ],
+
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+
+  "plugins": ["react", "react-hooks", "promise", "prettier", "react-redux", "import"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": "warn",
+    "no-unused-vars": "warn",
+    "no-template-curly-in-string": "error",
+    "react-redux/prefer-separate-component-file": 0,
+    "promise/no-nesting": 0,
+    "promise/catch-or-return": 0,
+    "no-await-in-loop": 1,
+    "block-scoped-var": "warn",
+    "no-eval": "error",
+    "no-return-await": 1,
+    "class-methods-use-this": 1,
+    "array-callback-return": "error",
+    "no-throw-literal": 1,
+    "prefer-regex-literals": 1,
+    "no-warning-comments": "warn",
+    "default-case": 1,
+    "no-eq-null": 1,
+    "yoda": 1
+  },
+  
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
