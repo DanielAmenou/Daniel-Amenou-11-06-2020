@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import MessageFormContainer from "./MessageFormContainer";
 
@@ -18,6 +18,10 @@ const ContentContainer = styled.div`
 `;
 
 const MessagePage = () => {
+  useEffect(() => {
+    document.title = "New Message";
+  }, []);
+
   return (
     <Container>
       <ContentContainer>

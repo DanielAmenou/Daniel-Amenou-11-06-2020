@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import MessagesManagerContainer from "./MessagesManagerContainer";
 
@@ -15,7 +15,11 @@ const ContentContainer = styled.div`
   border-radius: 20px;
 `;
 
-const MessagePage = () => {
+const ManagePage = () => {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
+
   return (
     <Container>
       <ContentContainer>
@@ -25,4 +29,4 @@ const MessagePage = () => {
   );
 };
 
-export default MessagePage;
+export default ManagePage;
