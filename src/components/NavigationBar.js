@@ -21,6 +21,8 @@ const Link = styled(NavLink)`
   text-align: center;
   color: white;
   &:hover {
+    color: white;
+    background-color: #1890ffcc;
   }
   &.active {
     color: #096dd9;
