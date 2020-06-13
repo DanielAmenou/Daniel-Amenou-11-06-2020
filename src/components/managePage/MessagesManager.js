@@ -25,6 +25,7 @@ const MessagesManager = ({
   onMessageDelete,
   receivedMessages,
   sentMessages,
+  isLoading,
 }) => {
   return (
     <Container>
@@ -33,6 +34,7 @@ const MessagesManager = ({
         placeholder="User ID"
         name="userId"
         enterButton="Load"
+        loading={isLoading}
         onSearch={onUserChange}
       />
       <Tabs defaultActiveKey="1">
@@ -57,6 +59,7 @@ const MessagesManager = ({
 
 MessagesManager.propTypes = {
   userId: types.string,
+  isLoading: types.bool.isRequired,
   onUserChange: types.func.isRequired,
   onMessageDelete: types.func.isRequired,
   receivedMessages: types.array.isRequired,
