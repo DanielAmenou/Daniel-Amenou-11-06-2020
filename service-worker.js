@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Daniel-Amenou-11-06-2020/precache-manifest.386867cd04b8bce8190e518fe516f42c.js"
+  "/Daniel-Amenou-11-06-2020/precache-manifest.804852e6f2bcdf13321c9385991fc85d.js"
 );
 
 self.addEventListener('message', (event) => {
